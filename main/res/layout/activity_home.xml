@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/black_gradient"
+    tools:context=".home">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_gravity="top"
+        android:layout_margin="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/mainbg"
+        android:foregroundGravity="top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/beatz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:paddingTop="10dp"
+            android:text="Beatz"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="36sp" />
+
+        <EditText
+            android:id="@+id/prime_search"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/search"
+            android:ems="10"
+            android:hint="Search for Movies or Songs"
+            android:inputType="textPersonName"
+            android:paddingLeft="15dp"
+            android:textColorHint="#96753a88"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:paddingLeft="10dp"
+            android:text="TRENDING ON BEATZ"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <ListView
+            android:id="@+id/trend"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:divider="#32ffffff"
+            android:dividerHeight="1dp"
+            android:fadingEdgeLength="50dp"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:requiresFadingEdge="vertical">
+
+        </ListView>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
